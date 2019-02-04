@@ -1,0 +1,19 @@
+{
+  "name": "ssr-demo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  }
+}
