@@ -1,9 +1,6 @@
 {
     "compilerOptions": {
-        "moduleResolution": "node",
         "outDir": "./dist/",
-        "module": "es6",
-        "target": "es5",
         "jsx": "react",
         "jsxFactory": "h",
         "allowJs": true

@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
     "preact": "^8.4.2",
+    "preact-render-to-string": "^4.1.0",
+    "terser": "3.14.1",
     "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
     "typescript": "^3.3.1",
     "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
-    "terser": "3.14.1"
+    "webpack-cli": "^3.2.1"
   },
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch"
+    "build-watch": "webpack --watch",
+    "start": "ts-node ./src/server",
+    "start-watch": "nodemon -e ts,tsx,js -w ./src -x npm run start",
+    "dev": "concurrently \"npm:build-watch\" \"npm:start-watch\""
   }
 }
