@@ -1,5 +1,4 @@
 import App from "./App";
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { h, render, Component } from "preact";
 
-ReactDOM.render(<App />, document.querySelector('[data-react-component="App"]'));
+render(<App />, document.querySelector('[data-react-component="App"]'));
