@@ -11,4 +11,4 @@ npm install
 npm run dev
 ```
 
-Browse to (localhost:8080)[http://localhost:8080/]
+Browse to [localhost:8080](http://localhost:8080/)
